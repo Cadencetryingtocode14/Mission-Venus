@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Time Mission</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+
+<header id="hero">
+
+    <div class="hero-content">
+
+        <p class="terminal">VENUS TEMPORAL ARCHIVE</p>
+
+        <h1>MISSION READY</h1>
+
+        <p class="intro">
+            Your mission is to travel through Venus' past and discover how
+            Earth's twin transformed into the hottest planet in our solar system.
+        </p>
+
+        <button id="startBtn">
+            Begin Time Jump
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MISSION BRIEFING ================= -->
+
+<section id="briefing">
+
+<h2>Mission Briefing</h2>
+
+<div class="panel">
+
+<p>
+
+You will travel through three moments in Venus' history.
+
+Each archive contains scientific evidence.
+
+Watch every mission log and collect the research before your return window closes.
+
+</p>
+
+<div class="progress">
+
+<h3>Mission Progress</h3>
+
+<div class="progress-bar">
+
+<div id="progressFill"></div>
+
+</div>
+
+<p id="progressText">
+0 / 3 Data Logs Collected
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= MISSION LOG 01 ================= -->
+
+<section class="mission">
+
+    <h2>MISSION LOG 01</h2>
+
+    <h3>Ancient Venus</h3>
+
+    <p>
+        Scientists believe Venus may once have contained
+        oceans and a much cooler climate.
+    </p>
+
+    <button class="play-btn">
+        ▶ Play Archive Footage
+    </button>
+
+    <video class="mission-video" controls preload="metadata" style="display:none;">
+
+        <source src="videos/venusbefore.mp4" type="video/mp4">
+
+    </video>
+
+    <button class="collect-btn" style="display:none;">
+        Collect Climate Data
+    </button>
+
+</section>
+
+
+
+<!-- ================= MISSION LOG 02 ================= -->
+
+<<!-- ================= MISSION LOG 02 ================= -->
+
+<section class="mission">
+
+    <h2>MISSION LOG 02</h2>
+
+    <h3>Climate Collapse</h3>
+
+    <p>
+        The atmosphere begins to trap enormous amounts of heat.
+        A runaway greenhouse effect transforms Venus into an increasingly
+        hostile environment.
+    </p>
+
+    <button class="play-btn">
+        ▶ Play Archive Footage
+    </button>
+
+    <video class="mission-video" controls preload="metadata" style="display:none;">
+
+        <source src="videos/venusduring.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+    <button class="collect-btn" style="display:none;">
+        Collect Atmosphere Data
+    </button>
+
+</section>
+
+
+<!-- ================= MISSION LOG 03 ================= -->
+
+<!-- ================= MISSION LOG 03 ================= -->
+
+<section class="mission">
+
+    <h2>MISSION LOG 03</h2>
+
+    <h3>Modern Venus</h3>
+
+    <p>
+        Venus is now one of the most extreme planets in the Solar System,
+        with crushing atmospheric pressure, sulfuric acid clouds, and
+        temperatures hot enough to melt lead.
+    </p>
+
+    <button class="play-btn">
+        ▶ Play Archive Footage
+    </button>
+
+    <video class="mission-video" controls preload="metadata" style="display:none;">
+
+        <source src="videos/venusafter.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+    <button class="collect-btn" style="display:none;">
+        Collect Final Scan
+    </button>
+
+</section>
+
+
+
+<!-- ================= FIELD RESEARCH ================= -->
+
+<section id="research">
+
+<h2>FIELD RESEARCH</h2>
+
+<p>
+Continue exploring the surface scans collected by previous missions.
+</p>
+
+<div class="gallery">
+
+<img src="images/surface-1.jpg">
+
+<img src="images/surface-2.jpg">
+
+<img src="images/surface-3.jpg">
+
+</div>
+
+</section>
+
+
+
+<!-- ================= RETURN ================= -->
+
+<section id="return">
+
+<h2>RETURN WINDOW</h2>
+
+<p>
+
+Mission data has been collected.
+
+Return to Earth before the time portal closes.
+
+</p>
+
+<div id="timer">
+
+03:00
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h2>MISSION COMPLETE</h2>
+
+<p>
+
+Thank you for exploring the history of Earth's twin.
+
+The collected research has been transmitted safely back to Earth.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

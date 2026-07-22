@@ -1,0 +1,372 @@
+/* ===========================
+   VENUS TIME MISSION
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#050816;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   STAR BACKGROUND
+   =========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:45px 45px;
+
+    opacity:.15;
+
+    z-index:-2;
+
+}
+
+/* ===========================
+   HERO
+   =========================== */
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+    linear-gradient(rgba(5,8,22,.85),rgba(5,8,22,.95)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.terminal{
+
+    color:#38bdf8;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+}
+
+.intro{
+
+    font-size:1.2rem;
+
+    color:#d5d8e2;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+
+button{
+
+    background:#38bdf8;
+
+    color:#050816;
+
+    border:none;
+
+    padding:16px 34px;
+
+    border-radius:40px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 20px #38bdf8;
+
+}
+
+/* ===========================
+   SECTIONS
+   =========================== */
+
+section{
+
+    padding:100px 12%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:2.8rem;
+
+    margin-bottom:40px;
+
+}
+
+section p{
+
+    color:#c8d0df;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   PANELS
+   =========================== */
+
+.panel{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#111827;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    border:1px solid #1f2937;
+
+}
+
+/* ===========================
+   PROGRESS BAR
+   =========================== */
+
+.progress{
+
+    margin-top:40px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#222f45;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:20px 0;
+
+}
+
+#progressFill{
+
+    width:0%;
+
+    height:100%;
+
+    background:#38bdf8;
+
+    transition:.5s;
+
+}
+
+/* ===========================
+   MISSION LOGS
+   =========================== */
+
+.mission{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.mission h3{
+
+    color:#38bdf8;
+
+    margin:20px 0;
+
+    font-size:2rem;
+
+}
+
+video{
+
+    width:100%;
+
+    margin:30px 0;
+
+    border-radius:18px;
+
+    border:2px solid #1f2937;
+
+}
+
+/* ===========================
+   GALLERY
+   =========================== */
+
+.gallery{
+
+    margin-top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   RETURN TIMER
+   =========================== */
+
+#return{
+
+    text-align:center;
+
+}
+
+#timer{
+
+    margin-top:40px;
+
+    font-size:5rem;
+
+    color:#f59e0b;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer{
+
+    background:#111827;
+
+    text-align:center;
+
+    padding:80px 30px;
+
+}
+
+footer p{
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   MOBILE
+   =========================== */
+
+@media(max-width:900px){
+
+h1{
+
+font-size:2.5rem;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+section{
+
+padding:70px 8%;
+
+}
+
+}
